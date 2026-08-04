@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ope = prompt("Escriba la operacion deseada('+','-','*','/')");
+        let num1 = parseInt(prompt("Escriba el primer número real"));
+        let num2 = parseInt(prompt("Escriba el segundo número real"));
+        
+
+        switch(ope){
+            case "+":
+            suma=(num1+num2);
+            alert("La operacion escojida fue la suma "+num1+" + "+num2+ " = "+suma)
+            break;
+            case "*":
+            multi=(num1*num2);
+            alert("La operacion escojida fue la multiplicacion "+num1+" X "+num2+ " = "+multi)
+            break;
+            case "-":
+            resta=(num1-num2);
+            alert("La operacion escojida fue la resta "+num1+" - "+num2+ " = "+resta)
+            break;
+            case "/":
+            division=(num1/num2);
+            alert("La operacion escojida fue la division "+num1+" / "+num2+ " = "+division)
+            break;
+            default:
+            alert("La operacion escojida no existe ERROR")
+
+        }
+    </script>
+</body>
+</html>
