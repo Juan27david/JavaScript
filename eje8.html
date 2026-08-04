@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cat = prompt("Escriba la categoria del cliente ejem('V','F','N')").toUpperCase();
+        let mon = parseInt(prompt("Escriba el totala pagar de la compra del cliente"));
+
+
+
+        switch(cat){
+            case "V":
+            desc=(mon*20)/100;
+            total1=mon-desc;
+            alert("descuento aplicado del 20%: "+desc+". Total final :$"+total1)
+            break;
+            case "F":
+            desc=(mon*10)/100;
+            total2=mon-desc;
+            alert("descuento aplicado del 10%: "+desc+". Total final :$"+total1)
+            break;
+            case "N":
+            desc3=0;
+            total3=mon-desc;
+            alert("descuento aplicado de 0%: "+desc3+". Total final :$"+total3)
+            break;
+            default:
+            alert("Ninguno de los descuentos escojidos es valido ERROR")
+
+
+        }
+    </script>
+</body>
+</html>
